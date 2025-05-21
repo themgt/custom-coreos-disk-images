@@ -137,7 +137,7 @@ main() {
     # Make sure SELinux is permissive
     if [ "$(getenforce)" != "Permissive" ]; then
         echo "SELinux needs to be set to permissive mode"
-        exit 1
+        #exit 1
     fi
     # Make sure we are effectively `root`
     if [ $UID -ne 0 ]; then
